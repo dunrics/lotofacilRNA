@@ -7,8 +7,12 @@ Esse código foi adaptado do artigo: https://medium.com/@polanitzer/how-to-guess
 
 Utiliza-se como entrada todos os resultados passados da Lotofacil, analisa esses dados utilizando rede neural e tenta predizer o próximo sorteio da LotoFacil.
 O código possui 3 etapas:
-   Análise e predição dos números;
-   Validação se os números gerados estão OK dos padrões estatísticos dos últimos sorteios;
-   Envia o resultado obtido automaticamente para essa página GIT.
+
+   -(lstmCode1.py) Análise e predição dos números;
+   
+   -(validaLSTM.py) Validação se os números gerados estão OK dos padrões estatísticos dos últimos sorteios;
+   
+   -(gitUpload.py) Envia o resultado obtido automaticamente para essa página GIT.
+   
 
 O código está em execução todos os dias em um servidor na núvem (Oracle Cloud)
