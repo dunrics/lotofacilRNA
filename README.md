@@ -15,4 +15,4 @@ O código possui 3 etapas:
    -(gitUpload.py) Envia o resultado obtido automaticamente para essa página GIT.
    
 
-O código está em execução todos os dias em um servidor na núvem (Oracle Cloud)
+O código está em execução via CRONTAB todos os dias em um servidor na nuvem (Oracle Cloud)
