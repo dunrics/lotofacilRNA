@@ -8,6 +8,7 @@ Esse código foi adaptado do artigo: https://medium.com/@polanitzer/how-to-guess
 
 Utiliza-se como entrada todos os resultados passados da Lotofacil, analisa esses dados utilizando rede neural e tenta predizer o próximo sorteio da LotoFacil.
 O código possui 6 etapas:
+
    -(geraDados.py) Extraí da internet o último resultado da Lotofacil;
 
    -(geraNum1.py) Gera os 5 números mais frequentes dos ultimas 100 concursos e salva a informação em um arquivo;
