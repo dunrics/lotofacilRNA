@@ -9,20 +9,26 @@ Esse código foi adaptado do artigo: https://medium.com/@polanitzer/how-to-guess
 Utiliza-se como entrada todos os resultados passados da Lotofacil, analisa esses dados utilizando rede neural e tenta predizer o próximo sorteio da LotoFacil.
 O código possui 6 etapas:
 
-   -(geraDados.py) Extraí da internet o último resultado da Lotofacil;
+Ordem de execução
+-(geraDados.py) Extraí da internet o último resultado da Lotofacil;
 
-   -(geraNum1.py) Gera os 5 números mais frequentes dos ultimas 100 concursos e salva a informação em um arquivo;
+-(geraNum1.py) Gera os 5 números mais frequentes dos ultimas 100 concursos e salva a informação em um arquivo (output_Metodo1). Também pega os 5 números que menos saíram e salva em um arquivo CSV (output_Metodo1_menos_frequentes);
 
-   -(lstmCode1.py) Análise e predição dos números;
+-(lstmCode1.py) Análise e predição dos números;
+
+-(normalizaLSTM.py) Extrai os dados da saída da RNA, abre os números mais sorteados dos últimos 100 concursos. Retira os números zeros e números repetidos encontrados no arquivo de saída da RNA. Substitui por números obtidos do arquivo de mais sorteados
+
+-(formataLSTM.py) Esse programa formata o arquivo 'outputRNA_Modificado.csv' obtido na normalização e inclui um numero menos sorteado nos ultimos concurso, gerando assim uma sequencia de 16 numeros
+
+-(gitUpload.py) Envia o resultado obtido automaticamente para essa página GIT.
+
    
-   -(validaLSTM.py) Validação se os números gerados estão OK dos padrões estatísticos dos últimos sorteios;
-
-   -(normalizaLSTM.py) Extrai os dados da saída da RNA, abre os números mais sorteados dos últimos 100 concursos. Retira os números zeros e números repetidos encontrados no arquivo de saída da RNA. Substitui por números obtidos
-do arquivo de mais sorteados
-
-   -(formataLSTM.py) Formata o arquivo 'outputRNA_Modificado.csv' obtido na normalização e aplica a validação de SOMA. Se a somatória dos números estiver entre 170 e 220, é sugerido que se trata de um palpite válido. Se não estiver nesse range, não é válido.
-
-   -(gitUpload.py) Envia o resultado obtido automaticamente para essa página GIT.
-   
-
+Dependências necessárias
+-python 3.10.11 ou 3.10.12
+-pip install requests
+-pip install numpy
+-pip install pandas
+-pip install scikit-learn
+-pip install keras
+-pip install tensorflow
 
