@@ -10,6 +10,7 @@ Utiliza-se como entrada todos os resultados passados da Lotofacil, analisa esses
 O código possui 6 etapas:
 
 Ordem de execução
+
 -(geraDados.py) Extraí da internet o último resultado da Lotofacil;
 
 -(geraNum1.py) Gera os 5 números mais frequentes dos ultimas 100 concursos e salva a informação em um arquivo (output_Metodo1). Também pega os 5 números que menos saíram e salva em um arquivo CSV (output_Metodo1_menos_frequentes);
